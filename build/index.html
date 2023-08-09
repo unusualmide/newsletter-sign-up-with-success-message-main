@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Sign Up</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body
+    class="md:bg-[#242742] antialiased min-h-screen flex justify-center items-center mb-10 md:mb-0"
+  >
+    <div
+      class="newsletter flex flex-col md:flex-row w-full md:w-[725px] h-full md:h-[500px] bg-white rounded-[30px] gap-6 md:gap-16"
+    >
+      <img
+        class="flex md:hidden"
+        src="img/illustration-sign-up-mobile.svg"
+        alt="illustration-sign-up-mobile"
+      />
+      <div
+        class="inline-flex flex-col justify-center items-start px-5 md:pl-14"
+      >
+        <h1
+          class="text-3xl md:text-[40px] font-bold text-[#242742] pb-3 md:pb-4"
+        >
+          Stay updated!
+        </h1>
+        <p
+          class="text-base md:text-[11px] font-semibold text-[#242742] leading-5"
+        >
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="flex flex-col gap-2.5 pt-5 pb-7">
+          <div class="inline-flex justify-start items-center gap-3">
+            <img
+              class="w-6 md:w-4 h-6 md:h-4"
+              src="img/icon-list.svg"
+              alt="icon-list"
+            />
+            <p class="text-base md:text-[11px] font-semibold">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="inline-flex justify-start items-center gap-3">
+            <img
+              class="w-6 md:w-4 h-6 md:h-4"
+              src="img/icon-list.svg"
+              alt="icon-list"
+            />
+            <p class="text-base md:text-[11px] font-semibold">
+              Measuring to ensure updates are a success
+            </p>
+          </div>
+          <div class="inline-flex justify-start items-center gap-3">
+            <img
+              class="w-6 md:w-4 h-6 md:h-4"
+              src="img/icon-list.svg"
+              alt="icon-list"
+            />
+            <p class="text-base md:text-[11px] font-semibold">And much more!</p>
+          </div>
+        </div>
+        <form action="#" class="flex flex-col gap-1.5 w-full form">
+          <div class="flex">
+            <span class="text-xs md:text-[10px] font-black">Email address</span>
+            <p
+              class="hidden text-red-600 text-[10px] ml-auto font-bold invalid_email"
+            >
+              Valid email required
+            </p>
+          </div>
+          <input
+            class="peer border bg-white text-sm md:text-xs w-full py-3 px-4 rounded-lg placeholder-slate-400 border-slate-300 focus:outline-none focus:shadow-sm inputtext"
+            type="email"
+            name="email"
+            placeholder="email@company.com"
+          />
+        </form>
+        <button
+          class="bg-[#242742] text-white text-sm md:text-[11px] font-bold text-center py-3.5 px-4 w-full antialiased rounded-lg mt-5 md:mt-4 focus:outline-none focus:bg-gradient-to-tr from-[#36384e] to-[#ff6257] transition duration-[1s] subscribe"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <img
+        class="hidden md:flex justify-center items-center py-5 pr-5"
+        src="img/illustration-sign-up-desktop.svg"
+        alt="illustration-sign-up-desktop"
+      />
+    </div>
+
+    <!-- Success -->
+    <div class="hidden success">
+      <div
+        class="flex flex-col justify-start items-start md:w-96 md:h-[365px] rounded-3xl bg-white gap-5 p-6 md:p-9"
+      >
+        <img
+          class="w-14 md:w-11 h-14 md:h-11"
+          src="img/icon-success.svg"
+          alt="icon-success"
+        />
+        <h1 class="text-4xl font-bold text-[#242742]">
+          Thanks for subscribing!
+        </h1>
+        <p class="text-sm md:text-[13px] font-medium text-[#242742]">
+          A confirmation email has been sent to
+          <strong>ash@loremcompany.com</strong>. Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+        <button
+          class="bg-[#242742] text-white font-semibold py-4 md:py-3 px-1.5 md:px-2 text-sm md:text-xs rounded-md w-full dismiss mt-52 md:mt-0 focus:outline-none focus:bg-gradient-to-tr from-[#36384e] to-[#ff6257] transition duration-[1s] "
+        >
+          Dismiss message
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
